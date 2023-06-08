@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/funciones.js"></script>
+    <link rel="stylesheet" href="../css/estilo2.css">
+</head>
+<body style="text-align: right;padding-bottom: 30%;">
+   
+      
+
+    <div  style="text-align: center;">
+
+        <h1>Formulario de Ventas de Tiquetes</h1>
+        <form id="ventasForm" onsubmit="return validarVenta()">
+
+            <label for="sala">Sala:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="text"  style="margin-right: 3%;"id="sala" name="sala" required><br><br>
+    
+            <label for="horario">Horario:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="text" style="margin-right: 5%;" id="horario" name="horario" required><br><br>
+    
+            <label for="numeroTiquetes">Número de Tiquetes:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="number"  style="margin-right: 11%;"id="numeroTiquetes" name="numeroTiquetes" min="1" required><br><br>
+    
+            <label for="posiciones">Posiciones:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="text"  style="margin-right: 6%;" style="margin-right: 3%;"id="posiciones" name="posiciones" required><br><br>
+    
+            <label for="formaPago">Forma de Pago:</label>&nbsp;&nbsp;&nbsp;
+             <select id="formaPago" name="formaPago" required>
+                 <option value="fisico">Efectivo</option>
+                 <option value="digital">Digital</option>
+                  </select><br><br>
+    
+            <label for="cliente">Cliente:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="text"  style="margin-right: 4%;"id="cliente" name="cliente"><br><br>
+    
+            <label for="fechaVenta">Fecha de Venta:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="date" style="margin-right: 10%;" id="fechaVenta" name="fechaVenta" required><br><br>
+    
+            <label for="vendedor">Vendedor:</label>&nbsp&nbsp&nbsp&nbsp
+            <input type="text"  style="margin-right: 5%;"id="vendedor" name="vendedor" required><br><br>
+    
+            <button onclick="saveData()">Guardar</button>
+            <button type="submit">Consultar</button>
+
+         <script>
+  
+         </script>
+    </div>
+    
+</body>
+</html>

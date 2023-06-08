@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function guardar() {
+        alert("¡Guardado exitosamente!");
+      }
+    </script>
+    <script src="../js/funciones.js"></script>
+    <link rel="stylesheet" href="../css/estilo3.css">
+</head>
+<body style="text-align: right;padding-bottom: 20;">
+
+
+ <h1>Gestión de Películas</h1> 
+  <form onsubmit="return validarFormulario()">
+
+    <label for="codigo">Código:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="codigo" name="codigo" required><br><br>
+
+    <label for="nombre-original">Nombre Original:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text" style="margin-right: 15%;"  id="nombre-original" name="nombre-original" required><br><br>
+
+    <label for="nombre-asignado">Nombre Asignado:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text" style="margin-right: 15%;"  id="nombre-asignado" name="nombre-asignado" required><br><br>
+
+    <label for="genero">Género:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="genero" name="genero" required><br><br>
+
+    <label for="idioma-original">Idioma Original:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text" style="margin-right: 15%;"  id="idioma-original" name="idioma-original" required><br><br>
+
+    <label for="idiomas-escucha">Idiomas para Escuchar:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="idiomas-escucha" name="idiomas-escucha" required><br><br>
+
+    <label for="subtitulos">Subtítulos Disponibles:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;"  id="subtitulos" name="subtitulos" required><br><br>
+
+    <label for="duracion">Duración:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="duracion" name="duracion" required><br><br>
+
+    <label for="actores-principales">Actores Principales:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="actores-principales" name="actores-principales" required><br><br>
+
+    <label for="actores-secundarios">Actores Secundarios:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;"  id="actores-secundarios" name="actores-secundarios" required><br><br>
+
+    <label for="num-afiches">Número de Afiches Disponibles:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="number"  style="margin-right: 15%;" id="num-afiches" name="num-afiches" required><br><br>
+
+    <label for="num-copias">Número de Copias:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="number"  style="margin-right: 15%;"  id="num-copias" name="num-copias" required><br><br>
+
+    <label for="productora">Productora:</label>&nbsp&nbsp&nbsp&nbsp 
+    <input type="text"  style="margin-right: 15%;" id="productora" name="productora" required><br><br>
+
+    <input type="submit"style="margin-right: 15%;" value="Guardar">
+  </form>
+ 
+  <button type="submit">Guardar</button>
+  <button type="submit">Consultar</button>
+  
+    
+</body>
+</html>

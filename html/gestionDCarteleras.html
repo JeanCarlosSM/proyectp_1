@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de carteleras</title>
+    <script src="../js/funciones.js"></script>
+    <script> function toggleSeat(seat) {
+        seat.classList.toggle('selected');
+      }</script>
+    <link rel="stylesheet" href="../css/estilo3.css">
+    <link rel="stylesheet" href="../css/cartelera.css">
+</head>
+
+<body  style="text-align: right;padding: 8%;">
+
+    <h1>Formulario de Carteleras</h1>
+    
+  
+  <div id="seatingArea" style="text-align: center;">
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div> 
+    <div class="seat" onclick="toggleSeat(this)"></div><br>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div> 
+    <div class="seat" onclick="toggleSeat(this)"></div><br>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div> <br>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+    <div class="seat" onclick="toggleSeat(this)"></div>
+   
+  </div>
+    
+    <form id="cartelerasForm" onsubmit="return validarCartelera()">
+        <label for="sala">Sala:</label>
+        <input type="text" id="sala" name="sala" required><br><br>
+
+        <label for="horario">Horario:</label>
+        <input type="text" id="horario" name="horario" required><br><br>
+
+        <label for="pelicula">Película:</label>
+        <input type="text" id="pelicula" name="pelicula" required><br><br>
+
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" id="fechaInicio" name="fechaInicio" required><br><br>
+
+        <label for="fechaFinalizacion">Fecha de Finalización:</label>
+        <input type="date" id="fechaFinalizacion" name="fechaFinalizacion" required><br><br>
+
+        <button type="submit">Guardar</button>
+        <button type="submit">Consultar</button>
+            
+
+    </form>
+</body>
+</html>

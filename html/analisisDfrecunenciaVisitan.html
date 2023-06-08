@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/analisis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Análisis de Frecuencia de Visitantes</h1>
+    <label for="frecuencia">Seleccione la frecuencia:</label>
+    <select id="frecuencia" name="frecuencia">
+        <option value="diaria">Diaria</option>
+        <option value="semanal">Semanal</option>
+        <option value="mensual">Mensual</option>
+    </select><br>
+
+    <button id="generar-btn">Generar Gráfica</button>
+
+    <canvas id="grafica" width="800" height="400"></canvas>
+
+    <button type="submit">Guardar</button>
+    <button type="submit">Consultar</button>
+    
+</body>
+</html>
